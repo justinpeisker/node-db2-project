@@ -34,7 +34,7 @@ const checkCarPayload = (req, res, next) => {
     status: 400,
     message: 'mileage is missing'
   })
-
+  next()
 }
 
 const checkVinNumberValid = (req, res, next) => {
@@ -56,7 +56,7 @@ const checkVinNumberUnique = async (req, res, next) => {
     } else {
       next({ 
         status: 400, 
-        message: `vin ${res.body.vin} already exists`})
+        message: `vin ${req.body.vin} already exists`})
     }
   } catch(err) {
     next(err)
