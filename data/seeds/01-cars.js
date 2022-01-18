@@ -7,6 +7,14 @@ const cars = [
         mileage: 100000,
         title: 'clean',
         transmission: 'automatic',
+    },
+    {
+        vin: '1111111111111112',
+        make: 'dodge',
+        model: 'ram',
+        mileage: 10000,
+        title: 'clean',
+        transmission: 'automatic',
     }
 ]
 
